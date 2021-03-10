@@ -184,7 +184,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Fullstack Javascript
+           Full Stack Web Developer
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Freelance
