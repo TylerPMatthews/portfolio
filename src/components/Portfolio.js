@@ -31,7 +31,7 @@ const projects = [
     uses two APIs, one for getting weather imformation and another (created by me) displaying the meme. I am using
     React for my front-end and Node for my backend.`,
     image: projectImage1,
-    github: "http://github.com/TylerPMatthews/MemeWeatherFrontend.git",
+    github: "https://github.com/users/TylerPMatthews/projects/2",
     live: "https://meme-weather-frontend.vercel.app",
   },
   {
