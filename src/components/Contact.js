@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import Send from "@material-ui/icons/Send";
+import emailjs from "emailjs-com";
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
@@ -62,18 +63,58 @@ const InputField = withStyles({
 
 const Contact = () => {
   const classes = useStyles();
+
+  const initialFormValues = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+
+  const [value, setValue] = useState(initialFormValues);
+
+  const handleChange = (e) => {
+    setValue({
+      ...value,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_osjw227",
+        "template_ym0eaqq",
+        e.target,
+        "user_9U9E83qI94Kf9ufWcapt7"
+      )
+      .then(
+        (result) => {
+          setValue(initialFormValues)
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <Box component="div" className={classes.contactContainer}>
       <Grid container justify="center">
-        <Box component="form" className={classes.form}>
+        <Box component="form" className={classes.form} onSubmit={sendEmail}>
           <Typography variant="h5" className={classes.heading}>
-           Contact me
+            Contact me
           </Typography>
           <InputField
             fullWidth={true}
             label="Name"
             variant="outlined"
             inputProps={{ className: classes.input }}
+            name="name"
+            onChange={handleChange}
+            value={value.name}
           />
           <InputField
             fullWidth={true}
@@ -81,6 +122,19 @@ const Contact = () => {
             variant="outlined"
             inputProps={{ className: classes.input }}
             className={classes.field}
+            name="email"
+            onChange={handleChange}
+            value={value.email}
+          />
+          <InputField
+            fullWidth={true}
+            label="Subject"
+            variant="outlined"
+            inputProps={{ className: classes.input }}
+            className={classes.field}
+            name="subject"
+            onChange={handleChange}
+            value={value.subject}
           />
           <InputField
             fullWidth={true}
@@ -89,12 +143,16 @@ const Contact = () => {
             multiline
             rows={4}
             inputProps={{ className: classes.input }}
+            name="message"
+            onChange={handleChange}
+            value={value.message}
           />
           <Button
             variant="outlined"
             fullWidth={true}
             endIcon={<Send />}
             className={classes.button}
+            type='submit'
           >
             Send
           </Button>
