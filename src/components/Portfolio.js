@@ -11,7 +11,6 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import projectImage1 from "../images/meme.png";
 import projectImage2 from "../images/construction.jpg";
-import { Redirect } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
