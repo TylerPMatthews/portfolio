@@ -92,6 +92,7 @@ const Contact = () => {
       .then(
         (result) => {
           setValue(initialFormValues)
+          window.alert(`Message has been sent!`)
           console.log(result.text);
         },
         (error) => {
