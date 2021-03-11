@@ -167,9 +167,10 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Started learning the very basics from html , css and vanilla
-            javascript. Then, advancing to frontend frameworks and state
-            managemnt tools such as React and Redux. Last, learning Node for our backends to be able to create full stack websites!
+            Started learning the very basics from HTML , CSS and javascript.
+            Then, advancing to Front-end frameworks and state management tools
+            such as React and Redux. Last, learning Node for our Back-end to be
+            able to create full stack websites!
           </Typography>
         </Box>
         <Typography
@@ -184,7 +185,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-           Full Stack Web Developer
+            Full Stack Web Developer
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             Freelance
