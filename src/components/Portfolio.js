@@ -40,26 +40,20 @@ const projects = [
     github: "https://github.com/TylerPMatthews/",
     live: "",
   },
-  // {
-  //   name: "Project 3",
-  //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-  //   consequatur magni quod nesciunt necessitatibus molestiae non\
-  //   eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-  //   iste alias sunt veritatis nisi dolores!`,
-  //   image: project3,
-  //   github: "https://github.com/TylerPMatthews/MemeWeatherFrontend.git",
-  //   live: "",
-  // },
-  // {
-  //   name: "Project 4",
-  //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-  //   consequatur magni quod nesciunt necessitatibus molestiae non\
-  //   eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-  //   iste alias sunt veritatis nisi dolores!`,
-  //   image: project4,
-  //   github: "https://github.com/TylerPMatthews/MemeWeatherFrontend.git",
-  //   live: "",
-  // },
+  {
+    name: "Coming soon ...",
+    description: `As I am coming toward the final few months of school, I will have more time for side projects. More projects coming very soon.`,
+    image: projectImage2,
+    github: "https://github.com/TylerPMatthews/",
+    live: "",
+  },
+  {
+    name: "Coming soon ...",
+    description: `As I am coming toward the final few months of school, I will have more time for side projects. More projects coming very soon.`,
+    image: projectImage2,
+    github: "https://github.com/TylerPMatthews/",
+    live: "",
+  },
   // {
   //   name: "Project 5",
   //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
