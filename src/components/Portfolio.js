@@ -86,9 +86,7 @@ const Portfolio = () => {
           <Grid item xs={12} sm={8} md={4} key={i}>
             <Card
               className={classes.cardContainer}
-              onClick={() => {
-                window.open(project.live);
-              }}
+           
             >
               <CardActionArea>
                 <CardMedia
