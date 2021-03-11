@@ -10,8 +10,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import projectImage1 from "../images/meme.png";
-import projectImage2 from '../images/construction.jpg'
-
+import projectImage2 from "../images/construction.jpg";
+import { Redirect } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -91,7 +91,12 @@ const Portfolio = () => {
         {/* Projects */}
         {projects.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
-            <Card className={classes.cardContainer}>
+            <Card
+              className={classes.cardContainer}
+              onClick={() => {
+                window.open(project.live);
+              }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
