@@ -32,6 +32,8 @@ const projects = [
     image: projectImage1,
     github: "https://github.com/users/TylerPMatthews/projects/2",
     live: "https://meme-weather-frontend.vercel.app",
+    about:
+      "https://docs.google.com/document/d/1LC9x5Nm-vZePQJY9GoRfVdlND8EGGh-BBb_ks8v7Vok/edit?usp=sharing",
   },
   {
     name: "Coming soon ...",
@@ -39,6 +41,7 @@ const projects = [
     image: projectImage2,
     github: "https://github.com/TylerPMatthews/",
     live: "",
+    about: "",
   },
   {
     name: "Coming soon ...",
@@ -46,6 +49,7 @@ const projects = [
     image: projectImage2,
     github: "https://github.com/TylerPMatthews/",
     live: "",
+    about: "",
   },
   {
     name: "Coming soon ...",
@@ -53,6 +57,7 @@ const projects = [
     image: projectImage2,
     github: "https://github.com/TylerPMatthews/",
     live: "",
+    about: "",
   },
   // {
   //   name: "Project 5",
@@ -63,6 +68,7 @@ const projects = [
   //   image: project5,
   //   github: "https://github.com/TylerPMatthews/MemeWeatherFrontend.git",
   //   live: "",
+  //  about:""
   // },
   // {
   //   name: "Project 6",
@@ -73,6 +79,7 @@ const projects = [
   //   image: project6,
   //   github: "https://github.com/TylerPMatthews/MemeWeatherFrontend.git",
   //   live: "",
+  //  about:""
   // },
 ];
 
@@ -84,10 +91,7 @@ const Portfolio = () => {
         {/* Projects */}
         {projects.map((project, i) => (
           <Grid item xs={12} sm={8} md={4} key={i}>
-            <Card
-              className={classes.cardContainer}
-           
-            >
+            <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -120,6 +124,14 @@ const Portfolio = () => {
                   href={project.live}
                 >
                   Live Website
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  target="_blank"
+                  href={project.about}
+                >
+                  About Project
                 </Button>
               </CardActions>
             </Card>
