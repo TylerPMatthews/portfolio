@@ -11,7 +11,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import projectImage1 from "../images/meme.png";
 import projectImage2 from "../images/construction.jpg";
-import projectImage3 from '../images/yeezy.png'
+import projectImage3 from "../images/yeezy.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -26,6 +26,13 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
+    name: "Redux Yeezy Shoes (CURRENTLY MOBILE ONLY)",
+    description: `Yeezy Shoes is a full-stack project. The project is a store which a user can purchase Yeezy shoes. React and Redux are being used to run the front-end. Node and Postgres are maintaining the back-end.`,
+    image: projectImage3,
+    github: "https://github.com/users/TylerPMatthews/projects/3",
+    live: "https://yeezyshoesfrontend.vercel.app",
+  },
+  {
     name: "Meme Weather",
     description: `Meme Weather is my first full-stack project. This project
     uses two APIs, one for getting weather imformation and another (created by me) displaying the meme. I am using
@@ -33,16 +40,14 @@ const projects = [
     image: projectImage1,
     github: "https://github.com/users/TylerPMatthews/projects/2",
     live: "https://meme-weather-frontend.vercel.app",
-    about:
-      "https://docs.google.com/document/d/1LC9x5Nm-vZePQJY9GoRfVdlND8EGGh-BBb_ks8v7Vok/edit?usp=sharing",
   },
+
   {
-    name: "Redux Yeezy Shoes (CURRENTLY MOBILE ONLY)",
-    description: `Yeezy Shoes is a full-stack project. The project is a store which a user can purchase Yeezy shoes. React and Redux are being used to run the front-end. Node and Postgres are maintaining the back-end.`,
-    image: projectImage3,
-    github: "https://github.com/users/TylerPMatthews/projects/3",
-    live: "https://yeezyshoesfrontend.vercel.app",
-    about: "",
+    name: "Coming soon ...",
+    description: `As I am coming toward the final few months of school, I will have more time for side projects. More projects coming very soon.`,
+    image: projectImage2,
+    github: "https://github.com/TylerPMatthews/",
+    live: "",
   },
   {
     name: "Coming soon ...",
@@ -50,15 +55,6 @@ const projects = [
     image: projectImage2,
     github: "https://github.com/TylerPMatthews/",
     live: "",
-    about: "",
-  },
-  {
-    name: "Coming soon ...",
-    description: `As I am coming toward the final few months of school, I will have more time for side projects. More projects coming very soon.`,
-    image: projectImage2,
-    github: "https://github.com/TylerPMatthews/",
-    live: "",
-    about: "",
   },
   // {
   //   name: "Project 5",
@@ -125,14 +121,6 @@ const Portfolio = () => {
                   href={project.live}
                 >
                   Live Website
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  target="_blank"
-                  href={project.about}
-                >
-                  About Project
                 </Button>
               </CardActions>
             </Card>
