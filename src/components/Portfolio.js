@@ -11,6 +11,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import projectImage1 from "../images/meme.png";
 import projectImage2 from "../images/construction.jpg";
+import projectImage3 from '../images/yeezy.png'
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -36,11 +37,11 @@ const projects = [
       "https://docs.google.com/document/d/1LC9x5Nm-vZePQJY9GoRfVdlND8EGGh-BBb_ks8v7Vok/edit?usp=sharing",
   },
   {
-    name: "Coming soon ...",
-    description: `As I am coming toward the final few months of school, I will have more time for side projects. More projects coming very soon.`,
-    image: projectImage2,
-    github: "https://github.com/TylerPMatthews/",
-    live: "",
+    name: "Redux Yeezy Shoes (CURRENTLY MOBILE ONLY)",
+    description: `Yeezy Shoes is a full-stack project. The project is a store which a user can purchase Yeezy shoes. React and Redux are being used to run the front-end. Node and Postgres are maintaining the back-end.`,
+    image: projectImage3,
+    github: "https://github.com/users/TylerPMatthews/projects/3",
+    live: "https://yeezyshoesfrontend.vercel.app",
     about: "",
   },
   {
