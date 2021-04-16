@@ -12,6 +12,7 @@ import Typography from "@material-ui/core/Typography";
 import projectImage1 from "../images/meme.png";
 import projectImage2 from "../images/construction.jpg";
 import projectImage3 from "../images/yeezy.png";
+import projectImage4 from '../images/imonline.png'
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -26,8 +27,15 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
+    name: "IMONLINE",
+    description: `Full stack social media application.--- Easy sign in : USERNAME: test  PASSWORD: test ---  Site may take a few seconds on initial load due to my back-end being hosted on free Heroku`,
+    image: projectImage4,
+    github: "https://github.com/users/TylerPMatthews/projects/4",
+    live: "https://im-online-frontend.vercel.app",
+  },
+  {
     name: "Redux Yeezy Shoes (CURRENTLY MOBILE ONLY)",
-    description: `Yeezy Shoes is a full-stack project. The project is a store which a user can purchase Yeezy shoes. React and Redux are being used to run the front-end. Node and Postgres are maintaining the back-end.`,
+    description: `Yeezy Shoes is a full-stack project. The project is a store which a user can purchase Yeezy shoes. React and Redux are being used to run the front-end. Node and Postgres are maintaining the back-end. Site may take a few seconds on initial load due to my back-end being hosted on free Heroku`,
     image: projectImage3,
     github: "https://github.com/users/TylerPMatthews/projects/3",
     live: "https://yeezyshoesfrontend.vercel.app",
@@ -36,7 +44,7 @@ const projects = [
     name: "Meme Weather",
     description: `Meme Weather is my first full-stack project. This project
     uses two APIs, one for getting weather imformation and another (created by me) displaying the meme. I am using
-    React for my front-end and Node for my backend.`,
+    React for my front-end and Node for my backend. Site may take a few seconds on initial load due to my back-end being hosted on free Heroku`,
     image: projectImage1,
     github: "https://github.com/users/TylerPMatthews/projects/2",
     live: "https://meme-weather-frontend.vercel.app",
@@ -44,14 +52,7 @@ const projects = [
 
   {
     name: "Coming soon ...",
-    description: `As I am coming toward the final few months of school, I will have more time for side projects. More projects coming very soon.`,
-    image: projectImage2,
-    github: "https://github.com/TylerPMatthews/",
-    live: "",
-  },
-  {
-    name: "Coming soon ...",
-    description: `As I am coming toward the final few months of school, I will have more time for side projects. More projects coming very soon.`,
+    description: `More projects coming soon ...`,
     image: projectImage2,
     github: "https://github.com/TylerPMatthews/",
     live: "",
