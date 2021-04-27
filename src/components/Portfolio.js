@@ -10,10 +10,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import projectImage1 from "../images/meme.png";
-import projectImage2 from "../images/construction.jpg";
-import projectImage3 from "../images/yeezy.png";
-import projectImage4 from '../images/imonline.png'
-import projectImage5 from '../images/green.png'
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
