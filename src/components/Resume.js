@@ -145,59 +145,44 @@ const Resume = () => {
             necessary.
           </Typography>
         </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2020
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
+
+        <Box component="div" className={classes.timeLine}>
           <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            Full Stack Web Developer
+            May 2021 - Current
           </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Lambda School
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Started learning the very basics from HTML , CSS and javascript.
-            Then, advancing to Front-end frameworks and state management tools
-            such as React and Redux. Last, learning Node for our Back-end to be
-            able to create full stack websites!
-          </Typography>
-        </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2021
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Full Stack Web Developer
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Freelance
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            While I continue my job search, I will be freelancing on the side to
-            gain further experience and advance my ability as a web developer .
-          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Software Developer
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              className={classes.body1}
+            >
+              Bryodyn Technologies
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              className={classes.subtitle1}
+              style={{ whiteSpace: "pre-line" }}
+            >
+              • Modify existing software to correct errors,to adapt it to new
+              hardware, or to upgrade interfaces and improve performance. •
+              Direct software programming and development of documentation. •
+              Develop or direct softwares ystem testing or validation
+              procedures. • Train users to use new or modified equipment. •
+              Backup files to local directories for instant recovery in case of
+              problems.
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Box>

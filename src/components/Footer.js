@@ -36,13 +36,13 @@ const Footer = () => {
         icon={<LinkedInIcon />}
         className={classes.root}
         target="_blank"
-        href="https://www.linkedin.com/in/🖥-tyler-matthews📱-065a411b3/"
+        href="https://www.linkedin.com/in/tylerpmatthews/"
       />
       <BottomNavigationAction
         icon={<AccountBoxIcon />}
         className={classes.root}
         target="_blank"
-        href="https://drive.google.com/file/d/122yZvYMMK16vFC03VTmUE-X6i7MiCNOv/view?ths=true"
+        href="https://drive.google.com/file/d/1fGhma0pjn2N6onLNWB7xMyhE1wpJptb3/view?usp=sharing"
       />
     </BottomNavigation>
   );

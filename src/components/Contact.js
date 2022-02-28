@@ -91,8 +91,8 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setValue(initialFormValues)
-          window.alert(`Message has been sent!`)
+          setValue(initialFormValues);
+          window.alert(`Message has been sent!`);
           console.log(result.text);
         },
         (error) => {
@@ -153,7 +153,7 @@ const Contact = () => {
             fullWidth={true}
             endIcon={<Send />}
             className={classes.button}
-            type='submit'
+            type="submit"
           >
             Send
           </Button>
